@@ -3,17 +3,17 @@ import {
   PrimaryColumn,
   Column,
   CreateDateColumn,
-  UpdateDateColumn,
-} from "typeorm";
-import { v4 as uuid } from "uuid";
+  UpdateDateColumn,                
+} from "typeorm";                 // SELECT * FROM 
+import { v4 as uuid } from "uuid"; /// ClientePgto as "Pagamento dos Clientes"
 
 @Entity("users")
 class User {
-  @PrimaryColumn()
-  readonly id: string;
+  @PrimaryColumn() 
+  readonly id: string;                // varchar 
 
   @Column()
-  name: string;
+  name: string;                 
 
   @Column()
   email: string;

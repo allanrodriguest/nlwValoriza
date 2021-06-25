@@ -9,20 +9,20 @@ export class CreateUsers1624335083498 implements MigrationInterface {
                 columns:[
                     {
                         name: "id",
-                        type: "uuid",
+                        type: "uuid", // Gera numeros randomicos - Gerador de int
                         isPrimary: true              
                     },
                     {
                         name: "name",
-                        type: "varchar"
+                        type: "varchar" // string == varchar (em Banco de Dados)
                     },
                     {
                         name: "email",
-                        type: "varchar"
+                        type: "varchar" 
                     },
                     {
                         name: "admin",
-                        type: "boolean",
+                        type: "boolean", // 1 = admin || 0 = nao admin
                         default: false
                     },
                     {
